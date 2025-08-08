@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
 import { Work_Sans } from "next/font/google";
 import "./globals.css";
-import { ThemeProvider } from "@/components/ThemeProvider";
+import { ThemeProvider } from "@/components/ThemeProvider"; 
+
+
+
 
 
 const work_sans = Work_Sans({
@@ -27,6 +30,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange>
           <main className="my-main">
+            
             {children}
 
           </main>

@@ -1,4 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# How to Build an MDX Blog with Next.js 15
+
+A Blog app built using Next.js 15, MDX (markdown), Prismjs and Tailwind CSS,. This app is static site that renders the markdown posts.
+
+![thumbnail](./thumbnail.jpg)
+
+Youtube: [Watch](https://youtu.be/9Qd2VC0bsgQ)
+
+## Getting Started
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/thetechmaze/nextjs-mdx-blog.git
+   ```
+2. **Install Dependencies**
+
+   ```bash
+   npm install
+   ```
+3. **Run the development server**
+
+   ```bash
+   npm run dev
+   ```
+
+   Open http://localhost:3000 in your browser to see the app in action.
+
+## Deployment
+
+To Deploy this app, you can use platforms like Vercel or Netlify. Ensure you have your environment variables set correctly on the chosen platform.
+
+## License
+
+This project is open source and available under the [MIT Licence](./LICENCE).
 
 ## Getting Started
 
@@ -71,11 +105,9 @@ contract SimpleStorage {
 - Decentralized finance
 - Identity verification
 
-
-
-
 Etape suivante:
 
 * Créer un mdx-layout.jsx dans le dossier components et lui ajouter le mdx-layout.module.css
-* Puis le fichier page.mdx sera enrobé par `<MdxLayout></MdxLayout`>
-*
+* Puis le fichier page.mdx sera enrobé par `<MdxLayout></MdxLayout`> pour lui donner du style.
+* dans src/app crée un dossier blog , dans le quel tu crée la page.jsx qui va donner accés a tout les blogs localhost:3000/blog
+* Et puis dans src/app/blog tu peut créer tout les blog.mdx ou .md que tu veut dont l'adresse est localhost:3000/blog/machine-learning-a-beginners-roadmap par exemple.
