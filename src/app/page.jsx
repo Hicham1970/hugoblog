@@ -33,8 +33,16 @@ export default function Home() {
               <Image src={p.thumbnail} alt={`${p.title} - thumbnail`} sizes="100vw" fill priority  />
             </div>
             { /**category */}
+            <p className="postCategory">
+              {p.category}
+            </p>
             {/* *title */ }
+            <h2 className="postTitle">{p.title}</h2>
             {/* *author & date  */}
+            <div className="postAuthor">
+              <div>{p.author}</div>
+              <div>{p.date}</div>
+            </div>
           </Link>
         ))}
       </div>
