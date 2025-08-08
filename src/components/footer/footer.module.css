@@ -1,0 +1,70 @@
+.link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: inherit; /* Le lien hérite de la couleur du texte du footer */
+}
+
+
+.text {
+  font-size: 1.5rem;   /* 24px */
+  line-height: 2rem;   /* 32px */
+}
+
+.bold{
+  font-weight: 700;
+}
+
+.footer{
+  /* From Tailwind: flex justify-between items-center */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  /* From Tailwind: py-8 px-5 */
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+
+}
+
+/* Styles for the container of the policy links */
+.socials {
+  /* From Tailwind: flex flex-row */
+  display: flex;
+  flex-direction: row;
+  gap: 1rem; /* Default gap for mobile */
+}
+
+/* Styling for the links themselves */
+.socials a {
+  /* From Tailwind: text-grey-700 */
+  color: #4b5563;
+  text-decoration: none;
+}
+
+/* From Tailwind: dark:text-grey-400 */
+.dark .socials a {
+  color: #c9ccd1;
+}
+
+/* From Tailwind: md:px-0 */
+@media (min-width: 768px) {
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .socials {
+    /* From Tailwind: md:space-x-10 */
+    gap: 2.5rem;
+  }
+}
+
+/* From Tailwind: dark:border-gray-700 */
+/* This assumes you have a .dark class on a parent element like <body> or <html> */
+.dark .footer {
+  border-top-color: #595a5c;
+}

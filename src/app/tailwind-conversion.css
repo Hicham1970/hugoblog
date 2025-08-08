@@ -1,0 +1,37 @@
+/* CSS equivalent for: p-4 group rounded-lg border w-[392px] border-grey-200 dark:border-grey-700 */
+
+.converted-component {
+  /* p-4 → padding: 1rem (16px) */
+  padding: 1rem;
+  
+  /* rounded-lg → border-radius: 0.5rem (8px) */
+  border-radius: 0.5rem;
+  
+  /* border → border-width: 1px */
+  border-width: 1px;
+  
+  /* w-[392px] → width: 392px */
+  width: 392px;
+  
+  /* border-grey-200 → border-color: #e5e7eb */
+  border-color: #e5e7eb;
+}
+
+/* Dark mode variant */
+@media (prefers-color-scheme: dark) {
+  .converted-component {
+    /* dark:border-grey-700 → border-color: #374151 */
+    border-color: #374151;
+  }
+}
+
+/* Alternative dark mode with class-based approach */
+.converted-component.dark {
+  border-color: #374151;
+}
+
+/* Note: 'group' is a Tailwind utility for hover states on parent elements */
+/* If you need group hover effects, you would need additional CSS like: */
+.converted-component:hover .group-hover-target {
+  /* Your hover styles here */
+}

@@ -20,17 +20,62 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+## Working with Nextjs MDX :
 
-To learn more about Next.js, take a look at the following resources:
+* Visite this page : https://nextjs.org/docs/app/guides/mdx
+* Installe this bibliotheques : npm install @next/mdx @mdx-js/loader @mdx-js/react @types/mdx
+* Configure next.config.mjs or .js ![1754589211221](image/README/1754589211221.png)
+* Ajouter un mdx-Component.jsx dans src ou dans le root de l'application.
+* Vous pouvez restituer MDX en utilisant le routage basé sur les fichiers de Next.js ou en important des fichiers MDX dans d'autres pages:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Lorsque vous utilisez le routage basé sur des fichiers, vous pouvez utiliser les pages MDX comme n'importe quelle autre page.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Dans les applications App Router, cela inclut la possibilité d'utiliser [des métadonnées](https://nextjs.org/docs/app/getting-started/metadata-and-og-images) .
 
-## Deploy on Vercel
+Créez une nouvelle page MDX dans le `/app` répertoire : ![1754590369367](image/README/1754590369367.png)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+* Dans le dossier src/app/blog on va créer un dossier abc dans le quel on crée lr fichier page.mdx:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# Blockchain Fundamentals
+
+### Smart Contract Example
+
+```solidity
+
+pragma solidity ^0.8.0;
+
+contract SimpleStorage {
+
+    uint256 public storedData;
+
+
+    function set(uint256 x) public {
+
+        storedData = x;
+
+    }
+
+    function get() public view returns (uint256) {
+
+        return storedData;
+
+    }
+
+}
+
+```
+
+## Use Cases
+
+- Supply chain management
+- Decentralized finance
+- Identity verification
+
+
+
+
+Etape suivante:
+
+* Créer un mdx-layout.jsx dans le dossier components et lui ajouter le mdx-layout.module.css
+* Puis le fichier page.mdx sera enrobé par `<MdxLayout></MdxLayout`>
+*
