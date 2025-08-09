@@ -88,11 +88,11 @@ export const posts = [
         thumbnail: "/images/thumbnail/typescript.jpg",
     },
     {
-        title: "How is the creator of this blog",
-        slug: "how-is-the-creator-of-this-blog",
+        title: "Who is the creator of this blog",
+        slug: "who-is-the-creator-of-this-blog",
         author: "Hicham Garoum",
         date: "2025-08-08",
-        category: "AI/ML",
+        category: "perso",
         thumbnail: "/images/thumbnail/vikings.png", 
     },
 ];
