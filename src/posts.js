@@ -10,8 +10,8 @@ export const posts = [
     {
         title: "Blockchain Fundamentals",
         slug: "blockchain-fundamentals",
-        author: "Robert Liu",
-        date: "2024-02-28",
+        author: "Hicham Garoum",
+        date: "2025-08.09",
         category: "Blockchain",
         thumbnail: "/images/thumbnail/green-coding.jpg",
     },
