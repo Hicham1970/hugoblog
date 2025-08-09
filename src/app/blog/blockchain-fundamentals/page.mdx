@@ -1,0 +1,157 @@
+import MdxLayout from "@/components/mdx-layout";
+
+<MdxLayout>
+# Blockchain Fundamentals
+
+# Les Fondamentaux de la Blockchain
+
+## Qu'est-ce que la Blockchain ?
+
+La blockchain est une technologie de stockage et de transmission d'informations révolutionnaire. Imaginez un grand livre comptable numérique partagé, transparent et infalsifiable, où chaque transaction est enregistrée de manière permanente et vérifiable par tous les participants du réseau.
+
+### Principe de base
+Au lieu d'avoir une autorité centrale (comme une banque) qui valide les transactions, la blockchain utilise un réseau décentralisé d'ordinateurs qui vérifient collectivement chaque opération.
+
+## Les Caractéristiques Clés
+
+### 1. Décentralisation
+- Aucune autorité centrale ne contrôle le réseau
+- Les données sont distribuées sur de nombreux nœuds
+- Résistance aux pannes et à la censure
+
+### 2. Transparence
+- Toutes les transactions sont visibles publiquement
+- Chacun peut vérifier l'historique complet
+- Pseudonymie : les identités sont masquées mais les transactions sont traçables
+
+### 3. Immutabilité
+- Une fois enregistrées, les données ne peuvent plus être modifiées
+- Chaque bloc est lié cryptographiquement au précédent
+- Sécurité renforcée contre la fraude
+
+### 4. Consensus
+- Les participants s'accordent sur la validité des transactions
+- Mécanismes comme la Preuve de Travail (Bitcoin) ou la Preuve d'Enjeu (Ethereum 2.0)
+
+## Comment ça fonctionne ?
+
+### Structure des blocs
+1. **En-tête** : métadonnées du bloc
+2. **Hash du bloc précédent** : lien cryptographique
+3. **Arbre de Merkle** : résumé de toutes les transactions
+4. **Timestamp** : horodatage
+5. **Transactions** : données réelles
+
+### Processus de validation
+1. Une transaction est initiée
+2. Elle est diffusée au réseau
+3. Les mineurs/validateurs vérifient la transaction
+4. La transaction est regroupée avec d'autres dans un bloc
+5. Le bloc est ajouté à la chaîne après consensus
+6. La transaction est confirmée et immuable
+
+## Types de Blockchain
+
+### Publiques
+- Ouvertes à tous (Bitcoin, Ethereum)
+- Complètement décentralisées
+- Transparence totale
+
+### Privées
+- Accès restreint à une organisation
+- Contrôle centralisé
+- Confidentialité accrue
+
+### Consortium
+- Contrôlées par un groupe d'organisations
+- Semi-décentralisées
+- Équilibre entre transparence et confidentialité
+
+## Applications Concrètes
+
+### Cryptomonnaies
+- Bitcoin : première application de la blockchain
+- Ethereum : plateforme pour contrats intelligents
+- Stablecoins : cryptomonnaies stables
+
+### Contrats Intelligents
+- Programmes autonomes qui s'exécutent automatiquement
+- Conditions prédéfinies dans le code
+- Élimination des intermédiaires
+
+### Autres domaines
+- **Supply Chain** : traçabilité des produits
+- **Santé** : sécurisation des dossiers médicaux
+- **Immobilier** : tokenisation des biens
+- **Vote électronique** : transparence démocratique
+- **Identité numérique** : gestion décentralisée des identités
+
+## Avantages et Défis
+
+### Avantages
+- Réduction des coûts (suppression d'intermédiaires)
+- Sécurité cryptographique
+- Transparence et traçabilité
+- Accessibilité mondiale 24h/24
+- Programmabilité (smart contracts)
+
+### Défis actuels
+- **Scalabilité** : limitations en termes de transactions par seconde
+- **Consommation énergétique** : notamment pour Bitcoin
+- **Adoption** : courbe d'apprentissage technique
+- **Réglementation** : cadre juridique en évolution
+- **Volatilité** : instabilité des cryptomonnaies
+
+## L'Écosystème Blockchain
+
+### Acteurs clés
+- **Développeurs** : créent les protocoles
+- **Mineurs/Validateurs** : sécurisent le réseau
+- **Utilisateurs** : adoptent la technologie
+- **Régulateurs** : encadrent l'usage
+- **Entreprises** : intègrent la blockchain
+
+### Outils et plateformes
+- **Wallets** : portefeuilles numériques
+- **Explorateurs de blocs** : navigation dans la blockchain
+- **Plateformes de développement** : Truffle, Hardhat
+- **Exchanges** : plateformes d'échange
+
+## Perspectives d'Avenir
+
+La blockchain évolue rapidement avec des innovations comme :
+- **Web3** : internet décentralisé
+- **DeFi** : finance décentralisée
+- **NFTs** : tokens non fongibles
+- **DAOs** : organisations autonomes décentralisées
+- **Interopérabilité** : connexion entre blockchains
+
+## Conclusion
+
+La blockchain représente un changement de paradigme fondamental dans la gestion des données et des transactions. Bien qu'encore en développement, cette technologie promet de transformer de nombreux secteurs en offrant plus de transparence, de sécurité et d'efficacité.
+
+Pour bien comprendre la blockchain, il faut la voir non pas seulement comme une technologie, mais comme une nouvelle façon d'organiser la confiance dans un monde numérique décentralisé.
+
+### Smart Contract Example
+
+```solidity
+pragma solidity ^0.8.0;
+contract SimpleStorage {
+    uint256 public storedData;
+
+    function set(uint256 x) public {
+        storedData = x;
+    }
+    function get() public view returns (uint256) {
+        return storedData;
+    }
+}
+```
+
+## Use Cases
+
+- Supply chain management
+- Decentralized finance
+- Identity verification
+
+</MdxLayout>

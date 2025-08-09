@@ -1,7 +1,15 @@
 export const posts = [
     {
-        title: "Abc Efg",
-        slug: "abc-efg",
+        title: "Who is the creator of this blog",
+        slug: "who-is-the-creator-of-this-blog",
+        author: "Hicham Garoum",
+        date: "2025-08-08",
+        category: "perso",
+        thumbnail: "/images/thumbnail/vikings.png",
+    },
+    {
+        title: "Blockchain Fundamentals",
+        slug: "blockchain-fundamentals",
         author: "Robert Liu",
         date: "2024-02-28",
         category: "Blockchain",
@@ -86,13 +94,6 @@ export const posts = [
         date: "2024-01-10",
         category: "TypeScript",
         thumbnail: "/images/thumbnail/typescript.jpg",
-    },
-    {
-        title: "Who is the creator of this blog",
-        slug: "who-is-the-creator-of-this-blog",
-        author: "Hicham Garoum",
-        date: "2025-08-08",
-        category: "perso",
-        thumbnail: "/images/thumbnail/vikings.png", 
-    },
+    }
+    
 ];

@@ -24,7 +24,7 @@ export default function Home() {
           <p className="author">Hicham Garoum | August 07, 2025</p>
         </div>
       </section>
-      {/* content section*/}
+      {/* content section ou tout les posts sont affichés ici a partir du tableau posts */}
       <div className="posts">
         {posts.map((p, idx) => (
           <Link className="post" key={idx} href={`/blog/${p.slug}`}>

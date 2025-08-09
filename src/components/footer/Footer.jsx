@@ -21,9 +21,9 @@ function Footer() {
         </div>
       </Link>
           <div className={styles.socials}>
-              <Link href={"/"}>Terms of Use</Link>
-              <Link href={"/"}>Privacy Policy</Link>
-              <Link href={"/"}>Cooky policy</Link>
+              <Link href="/terms-of-use">Terms of Use</Link>
+              <Link href="/privacy-policy">Privacy Policy</Link>
+              <Link href="/cookie-policy">Cookie Policy</Link>
           </div>
     </footer>
   );
